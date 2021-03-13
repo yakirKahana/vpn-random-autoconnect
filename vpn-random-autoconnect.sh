@@ -7,7 +7,7 @@ echo ${conns[$random]}
 
 # code by solsTiCe at askubuntu.com
 # userprofile: askubuntu.com/users/350004/solstice
-# taken from https://askubuntu.com/questions/86365/how-can-i-have-my-vpn-connect-automatically-when-the-wireless-connects
+# taken from https://askubuntu.com/a/1033606
 while ! nmcli dev status|grep -q connected; do
     sleep 1
 done
