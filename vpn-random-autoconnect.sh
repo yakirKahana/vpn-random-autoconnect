@@ -1,6 +1,6 @@
 #/bin/bash
-
+# get all VPN connections from nmcli
 conns=( $(nmcli con show | grep vpn |grep -o '^\S\+') )
 num_conns=${#conns[@]}
-echo ${conns[5]}
-echo $num_conns
+random=$(($RANDOM % $num_conns))
+echo ${conns[$random]}
